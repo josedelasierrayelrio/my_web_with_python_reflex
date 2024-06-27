@@ -9,3 +9,6 @@ __pycache__/
 
 # Referencias
 references/
+
+# Entorno virtual
+env/
