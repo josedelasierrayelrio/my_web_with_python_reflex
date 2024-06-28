@@ -1,5 +1,8 @@
 import reflex as rx
 from web.components.navbar import navbar
+from web.views.header.header import header
+from web.views.links.social_links import social_links
+from web.views.links.contact_links import contact_links
 
 class State(rx.State):
     pass
@@ -7,12 +10,11 @@ class State(rx.State):
 def index() -> rx.Component:
     return rx.vstack(
         navbar(),
-        
+        header(),
+        social_links(),
+        contact_links(),
+        align="center",
     )
-
-
-#NavBar
-
 
 # App
 app = rx.App()
