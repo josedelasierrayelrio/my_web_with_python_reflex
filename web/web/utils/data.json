@@ -1,0 +1,33 @@
+{
+    "about_me": {
+        "name": "José de la Sierra",
+        "profession": "Desarrollador Backend y desarrollador de videojuegos",
+        "alt_profession": "GameDev",
+        "bio": ""
+    },
+    "social_links": {
+        "linkedin": "",
+        "youtube": "https://www.youtube.com/channel/UCO7sVCoQg9-AqEf-h_8e4Qw",
+        "github": "",
+        "twitter": "https://x.com/lasierrayelrio",
+        "twitch": "https://www.twitch.tv/lasierrayelrio",
+        "instagram": ""
+    },
+    "personal_links": {
+        "website": "",
+        "blog": ""
+    },
+    "support_links": {
+        "patreon": "",
+        "kofi": ""
+    },
+    "contact_links": {
+        "email": "mailto:lasierrayelrio@gmail.com",
+        "blog": ""
+    },
+    "skills": [],
+    "contact": {
+        "email": "lasierrayelrio@gmail.com",
+        "phone": ""
+    }
+}

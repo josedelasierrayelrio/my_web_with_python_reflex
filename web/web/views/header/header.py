@@ -9,7 +9,7 @@ def header() -> rx.Component:
         rx.text(
             """Soy desarrollador de videojuegos independiente y desarrollador backend. 
                 Además, creo contenido sobre mis proyectos en redes para motivar y ayudar a los demás y a mí mismo. 
-                Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenide!"""
+                Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenide!""",
         ),
         align="center",
     )
