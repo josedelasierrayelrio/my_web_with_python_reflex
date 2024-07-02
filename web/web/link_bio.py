@@ -4,16 +4,11 @@ import web.styles.styles as styles
 from web.components.navbar import navbar
 from web.components.footer import footer
 from web.components.title import title
-from web.components.info_text import info_text
 from web.views.link_bio.header.header import header
 from web.views.link_bio.links.social_links import social_links
 
-
-class State(rx.State):
-    pass
-
-
-def index() -> rx.Component:
+@rx.page(route='/link_bio', title='Link_bio')
+def index_link_bio() -> rx.Component:
     return rx.box(
         navbar(),
         rx.center(
@@ -32,9 +27,3 @@ def index() -> rx.Component:
         ),
         footer(),
     )
-
-
-# App
-app = rx.App(style=styles.BASE_STYLE)
-app.add_page(index)
-app._compile()
