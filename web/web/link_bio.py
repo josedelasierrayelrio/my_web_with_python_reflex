@@ -7,7 +7,8 @@ from web.components.title import title
 from web.views.link_bio.header.header import header
 from web.views.link_bio.links.social_links import social_links
 
-@rx.page(route='/link_bio', title='Link_bio')
+
+@rx.page(route="/link_bio", title="Link_bio")
 def index_link_bio() -> rx.Component:
     return rx.box(
         navbar(),

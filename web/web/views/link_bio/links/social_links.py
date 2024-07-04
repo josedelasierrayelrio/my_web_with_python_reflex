@@ -43,4 +43,5 @@ def social_links() -> rx.Component:
         ),
         align="center",
         width="100%",
+        spacing=styles.Spacing_size.SMALL.value,
     )

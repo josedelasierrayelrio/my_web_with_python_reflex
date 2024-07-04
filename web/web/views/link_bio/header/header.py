@@ -5,6 +5,7 @@ from web.components.link_icon import link_icon_button
 from web.components.info_text import info_text
 from web.utils.statics_method import Utils
 
+
 def header() -> rx.Component:
     return rx.vstack(
         rx.hstack(
@@ -13,10 +14,8 @@ def header() -> rx.Component:
                 rx.heading("José de la Sierra", size="8"),
                 rx.text(
                     "@lasierrayelrio",
-                    style={
-                        "margin_top": "-10px !important",
-                        "font_size": styles.Size.DEFAULT.value,
-                    },
+                    margin_top="-10px !important",
+                    font_size=styles.Size.DEFAULT.value,
                 ),
                 rx.hstack(
                     link_icon_button("https://www.twitch.tv/lasierrayelrio"),
@@ -34,9 +33,26 @@ def header() -> rx.Component:
                 ),
                 align="start",
             ),
+            spacing=styles.Spacing_size.MEDIUM.value,
         ),
         # AÑOS DE EXP rx.flex(info_text(f"+{Utils.calcular_anios_experiencia(2024, 3):.2f}", "años de experiencia")),
-        rx.flex(info_text(f"+{Utils.calcular_anios_experiencia(2024, 3):.2f}", "años de experiencia")),
+        rx.flex(
+            info_text(
+                f"+{Utils.calcular_anios_experiencia(2024, 3):.2f}",
+                "años de experiencia",
+            ),
+            rx.spacer(),
+            info_text(
+                f"+{Utils.calcular_anios_experiencia(2024, 3):.2f}",
+                "años de experiencia",
+            ),
+            rx.spacer(),
+            info_text(
+                f"+{Utils.calcular_anios_experiencia(2024, 3):.2f}",
+                "años de experiencia",
+            ),
+            width="100%",
+        ),
         rx.text(
             """Soy desarrollador de videojuegos independiente y desarrollador backend. 
                 Además, creo contenido sobre mis proyectos en redes para motivar y ayudar a los demás y a mí mismo. 

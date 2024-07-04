@@ -1,6 +1,7 @@
 import reflex as rx
 import web.styles.styles as styles
 
+
 def link_button(
     title: str,
     body: str,

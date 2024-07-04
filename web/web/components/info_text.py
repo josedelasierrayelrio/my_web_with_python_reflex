@@ -3,8 +3,8 @@ import web.styles.styles as styles
 
 
 def info_text(
-    title: str, body_text: str, title_font_size_em: str = styles.Size.LITTLE_BIGGER.value, 
-    body_font_size_em: str = styles.Size.DEFAULT.value, body_color: str = "black", title_color: str = "black"
+    title: str, body_text: str, title_font_size_em: str = styles.Size.DEFAULT.value, 
+    body_font_size_em: str = styles.Size.MEDIUM.value, body_color: str = "black", title_color: str = "black"
 ) -> rx.Component:
     return rx.box(
         rx.text(
